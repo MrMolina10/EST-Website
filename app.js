@@ -1,0 +1,24 @@
+window.addEventListener('load', () => {
+    const preloader = document.querySelector('.preloader');
+    preloader.classList.add('preloader-finish');
+});
+
+
+let isModalOpen = false;
+          const swiper = new Swiper(".swiper", {
+            autoplay: {
+              delay: 2000,
+              disableOnInteraction: false,
+            },
+            loop: true,
+    
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+    
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
